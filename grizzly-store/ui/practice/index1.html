@@ -1,0 +1,129 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="Stylesheet" href="styles\styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ'
+        crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <title>Admin-Add Product</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="top-nav">
+            <span class="name">GRIZZLY</span>&nbsp;&nbsp;&nbsp;
+            <img id="img1" src="images\Capture.JPG" alt="logo" /> &nbsp;&nbsp;&nbsp;
+            <span class="name">STORE<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="text" class="search" placeholder="Search" name="search2"><i class="fa fa-search" style="background-color: white;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+         <a  class="notification">
+ <i  class="fa fa-bell" style="font-size:20px; color: grey; position: relative; left: 500px;"></i>
+<span class="badge"> </span>
+</a>
+<span style="margin-left: 550px;">Welcome, Admin</span>
+<a href="index.html" >
+    <input class="logot" type="submit" name="logout" value="Logout" />
+</a>
+</nav>
+
+<section>
+    <nav>
+        <a class="profile">PROFILE</a>
+        <a href="#" class="edit">Edit</a>
+
+    </nav>
+    <img src="images\logo.jfif" class="prf-img" alt="...">
+    <article>
+        </br>
+        <h3 align="center">Vineka V</h3>
+        </br>
+        <table align="center">
+            <tr>
+                <td align="center">
+                    <h6>ID</h6>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <p>15EE2019</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <h6>Designation</h6>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <p>Sr.Admin</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <h6>Office</h6>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <p>NYC ,NY ,USA</p>
+                </td>
+            </tr>
+        </table>
+    </article>
+</section>
+<section class="tab" class="container-fluid">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">PRODUCTS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">VENDORS</a>
+        </li>
+    </ul>
+    <section class="product">   
+        <img style="width: 520px; height: 520px;" src="images\addimage.JPG"  />  
+    </section>
+     <section class="enterdetails" >
+       <form method="GET" action="index2.html">
+              <input class="ent" type="text" name="pro-id" color="black" placeholder="Enter Product ID" /><hr class="line"  >
+         
+  <select class="ent" style="overflow: scroll;">
+      <option style="color: lightgrey;">Category</option>
+        <option value="Electronics">Electronics</option>
+    <option value="Appliances">Appliances
+    <option value="Healthcare">Healthcare
+    <option value="Furniture">Furniture
+    <option value="Automobile">Automobile
+    <option value="Cloths">Cloths
+  </select><hr class="line"  >
+  <input class="ent" type="text" name="pro-id" color="black" placeholder="Name" /><hr class="line"  >
+  <input class="ent" type="text" name="Description" color="black" placeholder="Description" /><hr class="line"  >
+  <input class="ent" type="text" name="pro-id" color="black" placeholder="Price" /><hr class="line"  >
+
+     </section>
+     <section class="option" >
+         
+         <input class="add" type="submit" name="add" value="Add">
+        <input class="cancel" type="reset" name="cancel" value="Cancel" color="black">
+     </form>
+     </section>
+</section>
+</body>
+
+</html>
